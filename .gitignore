@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment Variables
+.env
+
+# Data directory
+data/
+
+# Model files and training outputs
+Model_training/saved_models/
+Model_training/outputs/
+Model_training/experiment_results/
+notebooks/outputs/

@@ -1,0 +1,32 @@
+# Property Valuation with Satellite Imagery
+# Requirements File
+
+# Core ML
+torch>=2.0.0
+torchvision>=0.15.0
+xgboost>=2.0.0
+scikit-learn>=1.3.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+Pillow>=10.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Experiment Tracking
+mlflow>=2.9.0
+
+# Utilities
+tqdm>=4.65.0
+joblib>=1.3.0
+
+# For satellite-specific models
+torchgeo>=0.5.0  # TorchGeo pretrained models
+timm>=0.9.0      # PyTorch Image Models (for more backbones)
+
+# Additional
+optuna>=3.4.0    # Hyperparameter optimization
+shap>=0.43.0     # Model explainability
