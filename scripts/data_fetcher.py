@@ -1,11 +1,3 @@
-"""
-data_fetcher.py
-
-Script to load housing dataset and download satellite images 
-for lat/long coordinates using Google Maps Static API.
-Uses multithreading for fast parallel downloads.
-"""
-
 import os
 import requests
 import pandas as pd
@@ -25,9 +17,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# ============================================================
-# CONFIGURATION
-# ============================================================
 
 API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
 

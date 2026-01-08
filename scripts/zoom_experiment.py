@@ -138,7 +138,7 @@ def run_zoom_experiment():
 
             download_image_at_zoom(lat, lon, zoom, filepath)
 
-    logger.info(f"\n✅ Experiment complete! Images saved to: {OUTPUT_DIR}")
+    logger.info(f"\nExperiment complete! Images saved to: {OUTPUT_DIR}")
     logger.info(f"\nCompare the images in each location_X folder to see the difference between zoom levels.")
 
     # Create a summary
