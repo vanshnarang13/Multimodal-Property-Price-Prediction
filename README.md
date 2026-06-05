@@ -175,42 +175,6 @@ Multimodal-Property-Price-Prediction/
 └── 23124043_final.csv                        # Final test-set predictions
 ```
 
----
-
-## How to Run
-
-### 1. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Fetch satellite images
-
-```bash
-# Set your Google Maps Static API key
-export GOOGLE_MAPS_API_KEY=your_key_here
-
-python scripts/data_fetcher.py   # downloads images for training CSV
-```
-
-### 3. Exploratory analysis
-
-Open and run the notebooks in order:
-
-```
-notebooks/eda.ipynb
-notebooks/satellite_image_eda.ipynb
-notebooks/preprocessing.ipynb     # generates data/processed/{train,val,test}.csv
-```
-
-### 4. Train multimodal model
-
-```bash
-jupyter notebook Model_training/multimodal_property_valuation.ipynb
-```
-
-The notebook trains four backbone variants, evaluates them individually, builds a weighted ensemble, generates GradCAM and SHAP explanations, and writes predictions to `predictions.csv`.
 
 ---
 
